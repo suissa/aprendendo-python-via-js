@@ -34,6 +34,11 @@ console.log(squared_numbers)
 numbers = [2, 4, 6, 8, 10]
 squared_numbers = list(map(lambda n: n * n, numbers))
 print(squared_numbers)
+
+# Além disso tb temos List Comprehensions
+# Aprendi isso agora aqui https://docs.python.org/release/2.7/tutorial/datastructures.html#list-comprehensions
+square_numbers = [n*n for n in numbers]
+print( square_numbers )
 ```
 
 ### Funcional
