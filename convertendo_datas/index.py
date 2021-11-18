@@ -1,9 +1,14 @@
 import time
   
 ts = time.time()
-print(ts * 1000)
+print(ts)
 
-from datetime import datetime
+from datetime import date
 
-date01 = datetime.fromtimestamp(ts)
+date01 = date.fromtimestamp(ts)
 print(date01)
+
+# esse timedelta não fez muito sentido a sua nomenclatura
+from datetime import timedelta
+dt = date.today() - timedelta(5)
+print(dt)
