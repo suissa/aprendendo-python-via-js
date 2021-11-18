@@ -24,6 +24,12 @@ Tirando isso, qualquer coisa demanda muito menos tempo e linhas q no JS.
 Eu tava mó puto q tem q ficar criando função com def pra dar return em code de 1 linha, 
 até q aprendi o lambda do Python, q faz o mesmo esquema de Arrow Function One Line, ex:
 
+```js
+numbers = [2, 4, 6, 8, 10]
+squared_numbers = numbers.map(n => n * n)
+console.log(squared_numbers)
+```
+
 ```py
 numbers = [2, 4, 6, 8, 10]
 squared_numbers = list(map(lambda n: n * n, numbers))
