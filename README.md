@@ -19,6 +19,18 @@ Não gostei mto de tudo parecer meio "global", tanto q já tive problemas de ver
 
 Tirando isso, qualquer coisa demanda muito menos tempo e linhas q no JS.
 
+## Melhores correlações
+
+Eu tava mó puto q tem q ficar criando função com def pra dar return em code de 1 linha, 
+até q aprendi o lambda do Python, q faz o mesmo esquema de Arrow Function One Line, ex:
+
+```py
+numbers = [2, 4, 6, 8, 10]
+squared_numbers = list(map(lambda n: n * n, numbers))
+print(squared_numbers)
+```
+
+
 ## Datas
 
 Uma coisa que achei BEM ESTRANHA é que o Python trabalha o timestamp em SEGUNDOS e não milisegundos.
