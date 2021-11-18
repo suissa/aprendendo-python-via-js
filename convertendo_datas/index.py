@@ -10,5 +10,6 @@ print(date01)
 
 # esse timedelta não fez muito sentido a sua nomenclatura
 from datetime import timedelta
-dt = date.today() - timedelta(5)
-print(dt)
+days = 5
+dateNow = date.today() - timedelta(days)
+print(dateNow)
