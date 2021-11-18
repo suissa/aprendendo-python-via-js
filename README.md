@@ -95,3 +95,60 @@ dateNow = date.today() - timedelta(days)
 print(dateNow)
 ```
 
+## Timers - PROBLEMA NO PYTHON
+
+Não consegui cancelar um Timer internamente como faço no JS:
+
+```js
+counter = 0
+
+interval = setInterval(fn, 1)
+
+function fn () {
+  console.log(counter)
+  if (counter >= 2) 
+    clearInterval(interval)
+  counter+=1
+}
+```
+
+Preciso achar alguma forma de conseguir pegar a referência do `interval` dentro da função que
+é executada, aliás precisei apelar para o `function` no JS para fazer **HOISTING** dela, para que 
+eu pudesse declarar ela depois da sua chamada. **Eu RARAMENTE uso dessa forma!**
+
+Esse é meu code em Python:
+
+```py
+from threading import Timer
+
+# copiei de algum lugar
+def setInterval(function, interval, *params, **kwparams):
+    def setTimer(wrapper):
+        wrapper.timer = Timer(interval, wrapper)
+        wrapper.timer.start()
+
+    def wrapper():
+        function(*params, **kwparams)
+        setTimer(wrapper)
+    
+    setTimer(wrapper)
+    return wrapper
+
+def clearInterval(wrapper):
+    wrapper.timer.cancel()
+
+counter = 0
+
+def fn():
+  global counter
+  print(counter)
+
+  if (counter > 2): exit()
+  
+  counter+=1
+  
+interval = setInterval(fn, 1)
+```
+
+Por enquanto foi a única coisa que realmente nenhum exemplo que achei me ajudou.
+Irei deixar isso para depois. =><=

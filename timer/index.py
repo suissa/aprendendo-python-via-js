@@ -18,13 +18,11 @@ def clearInterval(wrapper):
 
 counter = 0
 
-interval = None
-
 def fn():
   global counter
-  global interval
-  print(counter, str(interval))
-  if (counter > 2): return
+  print(counter)
+
+  if (counter > 2): exit()
   
   counter+=1
   
