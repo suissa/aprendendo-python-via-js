@@ -5,10 +5,12 @@ actions = {}
 
 fs.readdirSync(testFolder).forEach(file => {
   console.log(file)
-  name = file.split('.js')[0]
-  console.log(file, name)
+  if (file.endsWith('.js')) {
+    name = file.split('.js')[0]
+    console.log(file, name)
 
-  actions[name] = require(testFolder+file)
+    actions[name] = require(testFolder+file)
+  }
 })
 
 console.log(actions, actions.add(2, 3) )
