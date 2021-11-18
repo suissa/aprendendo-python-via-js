@@ -145,12 +145,10 @@ candleSchema = {
   'open': [], 'high': [], 'low': [], 'close': []
 }
 
-
 for arr in list:
   candleSchema["open"].append(arr[1])
   candleSchema["high"].append(arr[2])
   candleSchema["low"].append(arr[3])
   candleSchema["close"].append(arr[4])
-
 
 print(candleSchema)
