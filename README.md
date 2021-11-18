@@ -22,8 +22,9 @@ Tirando isso, qualquer coisa demanda muito menos tempo e linhas q no JS.
 ## Datas
 
 Uma coisa que achei BEM ESTRANHA é que o Python trabalha o timestamp em SEGUNDOS e não milisegundos.
-O mais engraçado que é mais simples e lógico porém tem uma coisa que destoou disso tudo, mas vou deixar
-que você mesmo analise, caso nada tenha chamado sua atenção, melhor ainda.
+Além disso para operar os valores de uma Data no JS a gente precisa mudar O OBJETO criado.
+Nisso o Python está muito a frente, acho a forma do Python bem mais da hora, mesmo tendo que usar
+esse timedelta, que na primeira vez me causou estranheza, contudo, agora tá BEM SUAVE!
 
 JS: 
 
