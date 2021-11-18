@@ -1,2 +1,6 @@
 # aprendendo-python-via-js
-Minha forma de aprender Python
+
+Provavelmente isso não ajude ninguém, mas achei interessante escrever algumas correlações simples q fiz,
+pois estou aprendendo Python me baseando no que quero fazer, pois já fiz tudo em JS.
+
+Logo, a forma mais fácil, IMHO, de aprender uma lang nova é tentar *codar* as coisas que vc já conhece.
