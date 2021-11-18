@@ -36,6 +36,34 @@ squared_numbers = list(map(lambda n: n * n, numbers))
 print(squared_numbers)
 ```
 
+### Funcional
+
+Bom o lambda é uma MARAVILHA, só faltou o reduce ser nativo, precisei usar a functools p/ isso:
+
+```js
+numbers = [2, 4, 6, 8, 10]
+
+sum = (total, n) => total + n
+result = numbers.reduce(sum, 0)
+
+console.log(result)
+```
+
+```py
+numbers = [2, 4, 6, 8, 10]
+
+import functools
+sum = lambda total, n: total + n
+result = functools.reduce(sum, numbers)
+
+print(result)
+```
+
+Fora isso, até agora parece mto parecido com o JS se eu não usar `let` nem `const`.
+
+#### Adendo
+
+> Deixando BEM claro que estou escrevendo o JS da forma mais parecida do Python, pois eu uso const em TUDO :p
 
 ## Datas
 
