@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "axios": "^0.24.0"
+  },
+  "scripts": {
+    "preinstall": "node preinstall.js"
   }
 }

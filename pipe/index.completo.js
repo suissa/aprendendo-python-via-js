@@ -1,4 +1,5 @@
-pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x);
+
+pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x)
 
 getName = (person) => person.name;
 getName({ name: 'Buckethead' });
