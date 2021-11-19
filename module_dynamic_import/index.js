@@ -2,6 +2,7 @@ fs = require('fs')
 testFolder = './actions/'
 
 actions = {}
+command = 'add'
 
 fs.readdirSync(testFolder).forEach(file => {
   console.log(file)
@@ -13,4 +14,4 @@ fs.readdirSync(testFolder).forEach(file => {
   }
 })
 
-console.log(actions, actions.add(2, 3) )
+console.log(actions, actions[command](2, 3) )
